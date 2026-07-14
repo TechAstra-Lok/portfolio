@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lokeshprasai.com.np/sitemap.xml

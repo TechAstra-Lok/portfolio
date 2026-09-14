@@ -5,20 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="Zzo_T6bJM56rEKUgOQJKXVmRbbG0-6UpBOqXk4TRbds" />
-    <!-- SEO / Metadata -->
+    
+    <!-- Primary SEO Metadata -->
     <title>Lokesh Prasai | TechAstra Solutions - Cybersecurity & AI Specialist</title>
-    <meta name="description" content="Lokesh Prasai is a Cybersecurity Specialist, AI/ML Developer, and Web Architect at TechAstra Solutions in Birtamode, Nepal. Specialized in Pentesting and Secure AI.">
-    <meta name="keywords" content="Cybersecurity Nepal, AI Developer Nepal, Lokesh Prasai, TechAstra Solutions, Pentesting Nepal, Web Architect Birtamode">
+    <meta name="description" content="Official portfolio of Lokesh Prasai — Cybersecurity Specialist, AI/ML Developer, and Web Architect based in Birtamode, Jhapa, Nepal.">
+    <meta name="keywords" content="Lokesh Prasai, TechAstra Solutions, Cybersecurity Nepal, AI Developer Nepal, Pentesting Birtamode, Web Architecture Jhapa">
     <link rel="canonical" href="https://lokeshprasai.com.np/" />
 
-    <!-- Open Graph (Facebook/LinkedIn) -->
+    <!-- Open Graph / Social Sharing -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lokeshprasai.com.np/">
     <meta property="og:title" content="Lokesh Prasai | TechAstra Solutions">
-    <meta property="og:description" content="Building the next generation of secure, intelligent technology in Nepal.">
+    <meta property="og:description" content="Cybersecurity, AI/ML Engineering, and Web Development Services in Nepal.">
     <meta property="og:image" content="https://lokeshprasai.com.np/Profile.png">
 
-    <!-- Structured Data (JSON-LD) - Best for SEO -->
+    <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -26,6 +27,10 @@
       "name": "Lokesh Prasai",
       "url": "https://lokeshprasai.com.np/",
       "jobTitle": "Cybersecurity Specialist & AI Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "TechAstra Solutions"
+      },
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Birtamode",
@@ -35,73 +40,109 @@
       "sameAs": [
         "https://github.com/TechAstra-Lok/",
         "https://www.linkedin.com/in/lokesh-prasai/",
-        "https://www.facebook.com/lokesh.prasai1"
+        "https://www.facebook.com/lokesh.prasai1",
+        "https://www.instagram.com/timro_loku/"
       ]
     }
     </script>
 
-    <!-- Performance: Preconnect to external resources -->
+    <!-- Google Fonts & FontAwesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
         :root {
             --bg-dark: #0a0b10;
-            --card-bg: rgba(255, 255, 255, 0.05);
+            --card-bg: rgba(255, 255, 255, 0.04);
+            --card-hover: rgba(255, 255, 255, 0.07);
             --accent-purple: #8b5cf6;
             --accent-blue: #3b82f6;
+            --accent-green: #10b981;
             --text-main: #ffffff;
             --text-dim: #a1a1aa;
-            --glass-border: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --term-bg: rgba(15, 23, 42, 0.85);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
         html { scroll-behavior: smooth; }
         body { background-color: var(--bg-dark); color: var(--text-main); overflow-x: hidden; line-height: 1.6; }
 
-        /* --- BACKGROUND EFFECTS --- */
-        .blob { position: fixed; width: 500px; height: 500px; background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, rgba(0, 0, 0, 0) 70%); z-index: -1; filter: blur(80px); pointer-events: none; }
+        /* --- BACKGROUND BLOBS --- */
+        .blob { position: fixed; width: 500px; height: 500px; background: radial-gradient(circle, rgba(139, 92, 246, 0.12) 0%, rgba(0, 0, 0, 0) 70%); z-index: -1; filter: blur(90px); pointer-events: none; }
         .blob-1 { top: -100px; right: -100px; }
         .blob-2 { bottom: -100px; left: -100px; }
 
         /* --- NAVIGATION --- */
         nav {
-            position: fixed; top: 0; width: 100%; padding: 1rem 10%; display: flex; justify-content: space-between; align-items: center;
-            background: rgba(10, 11, 16, 0.8); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); z-index: 1000; border-bottom: 1px solid var(--glass-border);
+            position: fixed; top: 0; width: 100%; padding: 1rem 8%; display: flex; justify-content: space-between; align-items: center;
+            background: rgba(10, 11, 16, 0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); z-index: 1000; border-bottom: 1px solid var(--glass-border);
         }
-        .logo-container { display: flex; align-items: center; gap: 12px; text-decoration: none; transition: transform 0.2s ease; }
-        .logo-container:hover { transform: scale(1.02); }
-        .logo-img { width: 45px; height: 45px; border-radius: 8px; object-fit: cover; }
+        .logo-container { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-img { width: 40px; height: 40px; border-radius: 8px; object-fit: cover; }
         .logo-text { font-weight: 800; font-size: 1.2rem; color: var(--text-main); }
 
-        .nav-links { display: flex; list-style: none; gap: 2rem; align-items: center; }
+        .nav-links { display: flex; list-style: none; gap: 1.8rem; align-items: center; }
         .nav-links a { text-decoration: none; color: var(--text-dim); font-size: 0.9rem; font-weight: 500; transition: 0.3s; }
         .nav-links a:hover, .nav-links a.active { color: var(--text-main); }
 
         /* --- SECTIONS --- */
-        section { min-height: 100vh; padding: 120px 10% 60px; display: flex; flex-direction: column; justify-content: center; }
+        section { padding: 120px 8% 60px; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; }
+        .section-header { text-align: center; margin-bottom: 3.5rem; }
+        .section-title { font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; }
+        .section-subtitle { color: var(--accent-blue); font-weight: 600; font-size: 0.9rem; letter-spacing: 2px; text-transform: uppercase; }
+
+        /* --- BUTTONS --- */
+        .btn { padding: 12px 28px; background: var(--accent-blue); color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; transition: 0.3s; text-decoration: none; display: inline-block; }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3); }
+        .btn-outline { background: transparent; border: 1px solid var(--glass-border); color: var(--text-main); }
 
         /* --- HERO --- */
         #home { flex-direction: row; align-items: center; gap: 5%; }
         .hero-content { flex: 1.2; }
         .hero-image { flex: 0.8; display: flex; justify-content: center; }
-        .hero-image img { width: 100%; max-width: 450px; border-radius: 24px; border: 1px solid var(--glass-border); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); }
-        
+        .hero-image img { width: 100%; max-width: 420px; border-radius: 24px; border: 1px solid var(--glass-border); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); }
         h1 { font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; margin-bottom: 1rem; }
         .gradient-text { background: linear-gradient(90deg, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .hero-p { color: var(--text-dim); font-size: 1.1rem; margin-bottom: 2rem; max-width: 550px; }
 
-        .btn { padding: 12px 28px; background: var(--accent-blue); color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; transition: 0.3s; text-decoration: none; display: inline-block; }
-        .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3); }
+        /* --- ABOUT --- */
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+        .about-text p { color: var(--text-dim); margin-bottom: 1.2rem; font-size: 1rem; line-height: 1.7; }
+        .about-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem; }
+        .stat-card { background: var(--card-bg); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--glass-border); text-align: center; }
+        .stat-number { font-size: 2rem; font-weight: 800; color: var(--accent-blue); }
+        .stat-label { font-size: 0.8rem; color: var(--text-dim); text-transform: uppercase; margin-top: 0.3rem; }
 
         /* --- SKILLS --- */
-        .section-title { font-size: 2.5rem; margin-bottom: 3rem; text-align: center; }
-        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
-        .skill-card { background: var(--card-bg); padding: 2rem; border-radius: 16px; border: 1px solid var(--glass-border); text-align: center; transition: 0.3s; }
-        .skill-card:hover { border-color: var(--accent-blue); background: rgba(255, 255, 255, 0.08); }
-        .skill-card i { font-size: 2rem; color: var(--accent-blue); margin-bottom: 1.2rem; }
+        .skills-categories { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .category-card { background: var(--card-bg); padding: 2rem; border-radius: 16px; border: 1px solid var(--glass-border); }
+        .category-card h3 { font-size: 1.25rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px; color: var(--accent-blue); }
+        .skill-item { margin-bottom: 1rem; }
+        .skill-info { display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 0.4rem; }
+        .skill-bar { width: 100%; height: 6px; background: rgba(255, 255, 255, 0.1); border-radius: 4px; overflow: hidden; }
+        .skill-progress { height: 100%; background: linear-gradient(90deg, #3b82f6, #8b5cf6); border-radius: 4px; }
+
+        /* --- SERVICES --- */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+        .service-card { background: var(--card-bg); padding: 2.5rem 2rem; border-radius: 16px; border: 1px solid var(--glass-border); transition: 0.3s; }
+        .service-card:hover { transform: translateY(-8px); border-color: var(--accent-blue); background: var(--card-hover); }
+        .service-icon { width: 60px; height: 60px; background: rgba(59, 130, 246, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--accent-blue); margin-bottom: 1.5rem; }
+        .service-card h3 { font-size: 1.3rem; margin-bottom: 1rem; }
+        .service-card p { color: var(--text-dim); font-size: 0.95rem; line-height: 1.6; }
+
+        /* --- BLOGS --- */
+        .blogs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+        .blog-card { background: var(--card-bg); border-radius: 16px; border: 1px solid var(--glass-border); overflow: hidden; transition: 0.3s; }
+        .blog-card:hover { transform: translateY(-6px); border-color: var(--accent-purple); }
+        .blog-body { padding: 1.8rem; }
+        .blog-meta { display: flex; gap: 1rem; font-size: 0.8rem; color: var(--accent-blue); margin-bottom: 0.8rem; }
+        .blog-title { font-size: 1.2rem; margin-bottom: 1rem; line-height: 1.4; }
+        .blog-excerpt { color: var(--text-dim); font-size: 0.9rem; margin-bottom: 1.5rem; }
+        .blog-link { color: var(--text-main); font-weight: 600; text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 8px; transition: 0.2s; }
+        .blog-link:hover { color: var(--accent-purple); }
 
         /* --- PROJECTS --- */
         .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
@@ -111,6 +152,24 @@
         .project-img-wrapper img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
         .project-card:hover .project-img-wrapper img { scale: 1.1; }
         .project-info { padding: 1.5rem; }
+        .project-info a { color: var(--text-main); text-decoration: none; }
+        .project-info a:hover { color: var(--accent-blue); }
+
+        /* --- INTERACTIVE TERMINAL --- */
+        .terminal-window {
+            background: var(--term-bg); border: 1px solid var(--glass-border); border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6); overflow: hidden; margin-top: 1rem; width: 100%;
+        }
+        .terminal-header { background: rgba(255, 255, 255, 0.05); padding: 10px 16px; display: flex; align-items: center; gap: 8px; }
+        .term-dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+        .term-dot.red { background: #ef4444; }
+        .term-dot.yellow { background: #f59e0b; }
+        .term-dot.green { background: #10b981; }
+        .term-title { font-family: 'Fira Code', monospace; font-size: 0.8rem; color: var(--text-dim); margin-left: auto; margin-right: auto; }
+        .terminal-body { padding: 20px; font-family: 'Fira Code', monospace; font-size: 0.9rem; min-height: 180px; }
+        .term-output { color: var(--text-dim); margin-bottom: 10px; white-space: pre-wrap; }
+        .term-input-line { display: flex; align-items: center; gap: 10px; color: var(--accent-green); }
+        .term-input { background: transparent; border: none; color: white; font-family: 'Fira Code', monospace; font-size: 0.9rem; width: 100%; outline: none; }
 
         /* --- CONTACT --- */
         .contact-container { display: flex; gap: 3rem; background: var(--card-bg); padding: 3rem; border-radius: 24px; border: 1px solid var(--glass-border); }
@@ -118,6 +177,17 @@
         .contact-form { flex: 1; display: flex; flex-direction: column; gap: 1rem; }
         input, textarea { background: rgba(0, 0, 0, 0.2); border: 1px solid var(--glass-border); padding: 1rem; border-radius: 8px; color: white; transition: 0.3s; }
         input:focus, textarea:focus { outline: none; border-color: var(--accent-blue); background: rgba(0,0,0,0.4); }
+        .info-item { display: flex; align-items: center; gap: 1.2rem; margin-bottom: 1.5rem; }
+        .info-icon { width: 45px; height: 45px; background: rgba(59, 130, 246, 0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--accent-blue); }
+
+        /* --- FLOATING SOCIAL BAR --- */
+        .floating-socials {
+            position: fixed; left: 2rem; bottom: 2rem; display: flex; flex-direction: column; gap: 1.2rem;
+            z-index: 99; padding: 1rem 0.8rem; background: rgba(10, 11, 16, 0.7); backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border); border-radius: 30px;
+        }
+        .floating-socials a { color: var(--text-dim); font-size: 1.2rem; transition: 0.3s; text-align: center; }
+        .floating-socials a:hover { color: var(--accent-blue); transform: scale(1.2); }
 
         /* --- FOOTER --- */
         footer { text-align: center; padding: 4rem; border-top: 1px solid var(--glass-border); color: var(--text-dim); font-size: 0.9rem; }
@@ -126,8 +196,10 @@
         @media (max-width: 968px) {
             nav { padding: 1rem 5%; }
             #home { flex-direction: column-reverse; text-align: center; }
-            .hero-image img { max-width: 300px; margin-bottom: 2rem; }
+            .hero-image img { max-width: 280px; margin-bottom: 2rem; }
+            .about-grid { grid-template-columns: 1fr; }
             .contact-container { flex-direction: column; padding: 2rem; }
+            .floating-socials { display: none; }
         }
     </style>
 </head>
@@ -136,6 +208,15 @@
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
 
+    <!-- FLOATING SOCIAL MEDIA SIDEBAR -->
+    <div class="floating-socials">
+        <a href="https://github.com/TechAstra-Lok/" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/lokesh-prasai/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/lokesh.prasai1" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/timro_loku/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- NAVIGATION -->
     <nav>
         <a href="#home" class="logo-container" aria-label="TechAstra Solutions Home">
             <img src="./Tech_Astra.png" alt="TechAstra Solutions Logo" class="logo-img">
@@ -144,117 +225,131 @@
         <ul class="nav-links">
             <li><a href="#home" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#contact" class="btn" style="padding: 8px 20px;">Hire Me</a></li>
         </ul>
     </nav>
 
     <main>
+        <!-- HERO SECTION -->
         <section id="home">
             <div class="hero-content">
-                <h1>Lokesh <span class="gradient-text">Prasai &nbsp <img src="https://giwmscdntwo.gov.np/static/grapejs/img/Nepal-flag.gif" alt="Flag" style="height: 45px; width: auto;"></span></h1> 
-                <p style="color: var(--accent-blue); font-weight: 600; margin-bottom: 0.5rem; letter-spacing: 2px; text-transform: uppercase;">
-                    Birtamode, Jhapa, Nepal </p>
-                <p class="hero-p">Cybersecurity Specialist, AI/ML Developer, and Web Architect. Building secure, intelligent, and human-centric technology.</p>
+                <!-- SINGLE H1 TAG PER PAGE FOR SEO -->
+                <h1>Lokesh <span class="gradient-text">Prasai &nbsp; <img src="https://giwmscdntwo.gov.np/static/grapejs/img/Nepal-flag.gif" alt="Nepal Flag" style="height: 45px; width: auto; vertical-align: middle;"></span></h1> 
+                <p style="color: var(--accent-blue); font-weight: 600; margin-bottom: 0.5rem; letter-spacing: 2px; text-transform: uppercase;" id="profile-location">
+                    Birtamode, Jhapa, Nepal</p>
+                <p class="hero-p" id="profile-bio-short">Cybersecurity Specialist, AI/ML Developer, and Web Architect. Building secure, intelligent, and human-centric technology.</p>
                 
-                <div style="margin-top: 3rem; display: flex; gap: 2rem; font-size: 1.8rem;">
+                <div style="margin-bottom: 2rem; display: flex; gap: 2rem; font-size: 1.8rem;">
                     <a href="https://github.com/TechAstra-Lok/" target="_blank" rel="noopener noreferrer" style="color: var(--text-dim);" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/lokesh-prasai/" target="_blank" rel="noopener noreferrer" style="color: var(--text-dim);" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
                     <a href="https://www.facebook.com/lokesh.prasai1" target="_blank" rel="noopener noreferrer" style="color: var(--text-dim);" aria-label="Facebook Profile"><i class="fab fa-facebook"></i></a>
                     <a href="https://www.instagram.com/timro_loku/" target="_blank" rel="noopener noreferrer" style="color: var(--text-dim);" aria-label="Instagram Profile"><i class="fab fa-instagram"></i></a>
-                </div><br>
+                </div>
                 
                 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
                     <a href="#projects" class="btn">Featured Projects</a>
-                    <a href="mailto:laxmiprasai98@gmail.com" class="btn" style="background: transparent; border: 1px solid var(--glass-border);">Email Me</a>
+                    <a href="mailto:contact@lokeshprasai.com.np" class="btn btn-outline">Email Me</a>
                 </div>
             </div>
             <div class="hero-image">
-                <!-- Added fetchpriority for faster loading of the main image -->
-                <img src="./Profile.png" alt="Lokesh Prasai - Cybersecurity Specialist" fetchpriority="high">
+                <img src="./Profile.png" alt="Lokesh Prasai - Cybersecurity Specialist and AI Developer" fetchpriority="high">
             </div>
         </section>
 
+        <!-- DETAILED ABOUT SECTION -->
         <section id="about">
-            <h2 class="section-title">Core Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fas fa-shield-alt" aria-hidden="true"></i>
-                    <h3>Cyber Security</h3>
-                    <p>Defensive strategies and infrastructure protection using modern security protocols.</p>
+            <div class="section-header">
+                <span class="section-subtitle">Biography</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p id="about-p1"></p>
+                    <p id="about-p2"></p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-number" id="stat-experience">3+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" id="stat-audits">25+</div>
+                            <div class="stat-label">Audits Conducted</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" id="stat-models">10+</div>
+                            <div class="stat-label">AI Models Deployed</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <i class="fas fa-brain" aria-hidden="true"></i>
-                    <h3>AI/ML Dev</h3>
-                    <p>Developing predictive models and intelligent algorithms to automate complex tasks.</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-code" aria-hidden="true"></i>
-                    <h3>Web Architecture</h3>
-                    <p>Scalable, high-performance web applications built with a security-first mindset.</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-bug" aria-hidden="true"></i>
-                    <h3>Pentesting</h3>
-                    <p>Authorized vulnerability assessments to identify and patch security gaps.</p>
+                <div class="about-terminal">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <span class="term-dot red"></span>
+                            <span class="term-dot yellow"></span>
+                            <span class="term-dot green"></span>
+                            <span class="term-title">lokesh@techastra:~</span>
+                        </div>
+                        <div class="terminal-body">
+                            <div id="term-history" class="term-output">Type <span style="color: var(--accent-green);">help</span> to view available CLI commands.</div>
+                            <div class="term-input-line">
+                                <span>$</span>
+                                <input type="text" id="term-input" class="term-input" placeholder="enter command..." aria-label="Terminal Input" autofocus>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- DETAILED SKILLS SECTION -->
+        <section id="skills">
+            <div class="section-header">
+                <span class="section-subtitle">Capabilities</span>
+                <h2 class="section-title">Technical Expertise</h2>
+            </div>
+            <div class="skills-categories" id="skills-container"></div>
+        </section>
+
+        <!-- DETAILED SERVICES SECTION -->
+        <section id="services">
+            <div class="section-header">
+                <span class="section-subtitle">Solutions</span>
+                <h2 class="section-title">Services Offered</h2>
+            </div>
+            <div class="services-grid" id="services-container"></div>
+        </section>
+
+        <!-- FEATURED PROJECTS SECTION -->
         <section id="projects">
-            <h2 class="section-title">Recent Projects </h2>
-            <div class="project-grid">
-                <!-- Project 1 -->
-                <article class="project-card">
-                    <div class="project-img-wrapper">
-                        <img src="./protect_yourself.png" alt="Cyber Threat Analyzer Preview" loading="lazy">
-                    </div>
-                    <div class="project-info">
-                        <h3>Protect Yourself</h3>
-                        <p>Live global attack visualization and threat signature detection system.</p>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-img-wrapper">
-                        <a href="https://raktadata.lokeshprasai.com.np/" target="_blank" > <img src="./NBDS.png" alt="AI Meeting Platform Preview" loading="lazy"></a>
-                    </div>
-                    <div class="project-info">
-                       <a href="https://raktadata.lokeshprasai.com.np/"> <h3>Nepali Blood Donors Society</h3></a><br>
-                        <p>The Nepali Blood Donors society is a dedicated platform designed to connect blood donors with individuals in urgent need of blood transfusions across Nepal. Its primary mission is to save 
-                            lives by facilitating quick access to blood donors and managing blood requests efficiently.</p>
-                    </div>
-                </article>
-                
-                <!-- Project 2 -->
-                <article class="project-card">
-                    <div class="project-img-wrapper">
-                        <img src="./Ai_Meeting.png" alt="AI Meeting Platform Preview" loading="lazy">
-                    </div>
-                    <div class="project-info">
-                        <h3>AI Meeting Minutes</h3>
-                        <p>Automated transcription and intelligence extraction platform for teams.</p>
-                    </div>
-                </article>
-                <!-- Project 3 -->
-                <article class="project-card">
-                    <div class="project-img-wrapper">
-                        <img src="./hamro_ghar_jagga.png" alt="Real Estate System Preview" loading="lazy">
-                    </div>
-                    <div class="project-info">
-                        <h3>Hamro Ghar Jagga</h3>
-                        <p>Specialized property management and mapping solution for the Nepal market.</p>
-                    </div>
-                </article>
+            <div class="section-header">
+                <span class="section-subtitle">Portfolio</span>
+                <h2 class="section-title">Recent Projects</h2>
             </div>
+            <div class="project-grid" id="projects-container"></div>
         </section>
 
-       <!-- START CONTACT SECTION -->
+        <!-- DETAILED BLOGS SECTION -->
+        <section id="blog">
+            <div class="section-header">
+                <span class="section-subtitle">Articles & Insights</span>
+                <h2 class="section-title">Latest Blog Posts</h2>
+            </div>
+            <div class="blogs-grid" id="blogs-container"></div>
+        </section>
+
+        <!-- DETAILED CONTACT SECTION -->
         <section id="contact">
-            <h2 class="section-title">Let's Connect</h2>
+            <div class="section-header">
+                <span class="section-subtitle">Inquiries</span>
+                <h2 class="section-title">Let's Connect</h2>
+            </div>
             
-            <!-- Success and Error Messaging UI -->
             <div id="status-container" style="max-width: 600px; margin: 0 auto 1.5rem auto;">
                 <div id="form-status-success" data-fs-success style="display:none; background: rgba(16, 185, 129, 0.1); border: 1px solid #10b981; padding: 1rem; border-radius: 12px; text-align: center; color: #10b981; font-weight: 500;">
                     <i class="fas fa-check-circle" style="margin-right: 8px;"></i> Secure message sent! I will get back to you shortly.
@@ -263,84 +358,130 @@
                     <i class="fas fa-exclamation-triangle" style="margin-right: 8px;"></i> Oops! Something went wrong. Please check the fields and try again.
                 </div>
             </div>
-        
+
             <div class="contact-container">
-                <!-- Sidebar Info -->
                 <div class="contact-info">
                     <div class="info-item">
-                        <i class="fas fa-envelope" aria-hidden="true"></i>
-                        <span>contact@lokeshprasai.com.np</span>
-                    </div><br>
-                    <div class="info-item">
-                        <i class="fas fa-phone" aria-hidden="true"></i>
-                        <span>+977 9816003020</span>
-                    </div><br>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                        <span>Birtamode, Jhapa, Nepal</span>
+                        <div class="info-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                        <div>
+                            <div style="font-size: 0.8rem; color: var(--text-dim);">Direct Email</div>
+                            <div style="font-weight: 600;" id="contact-email">contact@lokeshprasai.com.np</div>
+                        </div>
                     </div>
-                    
-                    <div style="margin-top: 3rem; display: flex; gap: 2rem; font-size: 1.8rem;">
-                        <a href="https://github.com/TechAstra-Lok/" target="_blank" rel="noopener noreferrer" style="color: var(--text-dim);" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/lokesh-prasai/" target="_blank" rel="noopener noreferrer" style="color: var(--text-dim);" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.facebook.com/lokesh.prasai1" target="_blank" rel="noopener noreferrer" style="color: var(--text-dim);" aria-label="Facebook Profile"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/timro_loku/" target="_blank" rel="noopener noreferrer" style="color: var(--text-dim);" aria-label="Instagram Profile"><i class="fab fa-instagram"></i></a>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+                        <div>
+                            <div style="font-size: 0.8rem; color: var(--text-dim);">Phone / WhatsApp</div>
+                            <div style="font-weight: 600;" id="contact-phone">+977 9816003020</div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+                        <div>
+                            <div style="font-size: 0.8rem; color: var(--text-dim);">Location</div>
+                            <div style="font-weight: 600;" id="contact-location">Birtamode, Jhapa, Nepal</div>
+                        </div>
                     </div>
                 </div>
-        
-                <!-- High-Security AJAX Form -->
+
                 <form id="contact-form" class="contact-form">
-                    <div style="display: flex; flex-direction: column; gap: 1rem;">
-                        <input type="text" name="name" placeholder="Full Name" required data-fs-field>
-                        <input type="email" name="email" placeholder="Email Address" required data-fs-field>
-                        <textarea name="message" rows="5" placeholder="How can TechAstra help you?" required data-fs-field></textarea>
-                        
-                        <button type="submit" class="btn" data-fs-submit-btn>
-                            Send Secure Message
-                        </button>
-                        
-                        <p style="font-size: 0.75rem; color: var(--text-dim); margin-top: 0.5rem; text-align: center;">
-                            <i class="fas fa-lock" style="font-size: 0.7rem;"></i> End-to-end encrypted submission via Formspree AJAX.
-                        </p>
-                    </div>
+                    <input type="text" name="name" placeholder="Full Name" required data-fs-field>
+                    <input type="email" name="email" placeholder="Email Address" required data-fs-field>
+                    <textarea name="message" rows="5" placeholder="How can TechAstra help you?" required data-fs-field></textarea>
+                    
+                    <button type="submit" class="btn" data-fs-submit-btn>Send Secure Message</button>
+                    
+                    <p style="font-size: 0.75rem; color: var(--text-dim); margin-top: 0.5rem; text-align: center;">
+                        <i class="fas fa-lock" style="font-size: 0.7rem;"></i> End-to-end encrypted submission via Formspree AJAX.
+                    </p>
                 </form>
             </div>
         </section>
-
-        <!-- Include Formspree AJAX Library and Initialization Logic -->
-        <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
-        <script>
-            // Ensure formspree queue is ready
-            window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
-            
-            // Initialize the form with TechAstra's specific ID
-            formspree('initForm', { 
-                formElement: '#contact-form', 
-                formId: 'xzdogvnl',
-                onSuccess: function() {
-                    // Smoothly hide the form and show success UI
-                    const form = document.getElementById('contact-form');
-                    form.style.transition = 'opacity 0.4s ease';
-                    form.style.opacity = '0';
-                    
-                    setTimeout(() => {
-                        form.style.display = 'none';
-                        const successMsg = document.getElementById('form-status-success');
-                        successMsg.style.display = 'block';
-                        // Optional: Scroll back to the success message
-                        successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    }, 400);
-                }
-            });
-        </script>
-<!-- END CONTACT SECTION -->
     </main>
 
     <footer>
         <p>&copy; 2026 TechAstra Solutions | Lokesh Prasai. Securely Crafted in Nepal.</p>
     </footer>
 
+    <!-- Configuration & Script Loaders -->
+    <script src="./config.js"></script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+    
     <script>
+        // Populate Dynamic Profile Data
+        if (typeof SITE_DATA !== 'undefined') {
+            document.getElementById('about-p1').innerText = SITE_DATA.profile.bioParagraph1;
+            document.getElementById('about-p2').innerText = SITE_DATA.profile.bioParagraph2;
+            document.getElementById('stat-experience').innerText = SITE_DATA.profile.stats.experience;
+            document.getElementById('stat-audits').innerText = SITE_DATA.profile.stats.audits;
+            document.getElementById('stat-models').innerText = SITE_DATA.profile.stats.models;
+            document.getElementById('contact-email').innerText = SITE_DATA.profile.email;
+            document.getElementById('contact-phone').innerText = SITE_DATA.profile.phone;
+            document.getElementById('contact-location').innerText = SITE_DATA.profile.location;
+
+            // Render Skills
+            const skillsContainer = document.getElementById('skills-container');
+            if (skillsContainer && SITE_DATA.skills) {
+                skillsContainer.innerHTML = SITE_DATA.skills.map(cat => `
+                    <div class="category-card">
+                        <h3><i class="${cat.icon}"></i> ${cat.category}</h3>
+                        ${cat.items.map(skill => `
+                            <div class="skill-item">
+                                <div class="skill-info"><span>${skill.name}</span><span>${skill.percent}</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: ${skill.percent};"></div></div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `).join('');
+            }
+
+            // Render Services
+            const servicesContainer = document.getElementById('services-container');
+            if (servicesContainer && SITE_DATA.services) {
+                servicesContainer.innerHTML = SITE_DATA.services.map(srv => `
+                    <div class="service-card">
+                        <div class="service-icon"><i class="${srv.icon}"></i></div>
+                        <h3>${srv.title}</h3>
+                        <p>${srv.description}</p>
+                    </div>
+                `).join('');
+            }
+
+            // Render Projects
+            const projectsContainer = document.getElementById('projects-container');
+            if (projectsContainer && SITE_DATA.projects) {
+                projectsContainer.innerHTML = SITE_DATA.projects.map(proj => `
+                    <article class="project-card">
+                        <div class="project-img-wrapper">
+                            <a href="${proj.link}" target="_blank" rel="noopener noreferrer">
+                                <img src="${proj.image}" alt="${proj.title} Screenshot" loading="lazy">
+                            </a>
+                        </div>
+                        <div class="project-info">
+                            <a href="${proj.link}" target="_blank" rel="noopener noreferrer"><h3>${proj.title}</h3></a>
+                            <p>${proj.description}</p>
+                        </div>
+                    </article>
+                `).join('');
+            }
+
+            // Render Blogs
+            const blogsContainer = document.getElementById('blogs-container');
+            if (blogsContainer && SITE_DATA.blogs) {
+                blogsContainer.innerHTML = SITE_DATA.blogs.map(blog => `
+                    <article class="blog-card">
+                        <div class="blog-body">
+                            <div class="blog-meta"><span>${blog.category}</span> • <span>${blog.readTime}</span></div>
+                            <h3 class="blog-title">${blog.title}</h3>
+                            <p class="blog-excerpt">${blog.excerpt}</p>
+                            <a href="${blog.link}" target="_blank" rel="noopener noreferrer" class="blog-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                `).join('');
+            }
+        }
+
+        // Navigation Highlight Logic
         const sections = document.querySelectorAll("section");
         const navLinks = document.querySelectorAll(".nav-links a");
 
@@ -360,6 +501,57 @@
                 }
             });
         });
+
+        // Formspree AJAX Handler
+        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+        formspree('initForm', { 
+            formElement: '#contact-form', 
+            formId: 'xzdogvnl',
+            onSuccess: function() {
+                const form = document.getElementById('contact-form');
+                form.style.transition = 'opacity 0.4s ease';
+                form.style.opacity = '0';
+                
+                setTimeout(() => {
+                    form.style.display = 'none';
+                    const successMsg = document.getElementById('form-status-success');
+                    successMsg.style.display = 'block';
+                    successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }, 400);
+            }
+        });
+
+        // Interactive Terminal Command Handling
+        const termInput = document.getElementById('term-input');
+        const termHistory = document.getElementById('term-history');
+
+        const commands = {
+            'help': 'Available commands: about, skills, services, projects, blog, contact, clear',
+            'about': 'Lokesh Prasai - Cybersecurity Specialist, AI/ML Developer & Web Architect based in Birtamode, Jhapa, Nepal.',
+            'skills': 'Capabilities: Penetration Testing, Wireshark, Burp Suite, PyTorch/TensorFlow, Python, Node.js, Web Architecture.',
+            'services': 'Services: Penetration Testing, AI/ML Solutions, Secure Web Development, Security Auditing.',
+            'projects': 'Featured Work: Protect Yourself, Nepali Blood Donors Society, AI Meeting Minutes, Hamro Ghar Jagga.',
+            'blog': 'Topics: OWASP Top 10, Deploying NLP Models on Edge Infrastructure, Hardening Frontend Interfaces.',
+            'contact': 'Email: contact@lokeshprasai.com.np | Phone: +977 9816003020 | Location: Birtamode, Jhapa',
+            'clear': 'CLEAR'
+        };
+
+        if (termInput) {
+            termInput.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter') {
+                    const cmd = this.value.trim().toLowerCase();
+                    this.value = '';
+
+                    if (cmd === 'clear') {
+                        termHistory.innerText = 'Type "help" to view available CLI commands.';
+                        return;
+                    }
+
+                    let response = commands[cmd] || `Command not found: "${cmd}". Type "help" for options.`;
+                    termHistory.innerText += `\n\n$ ${cmd}\n${response}`;
+                }
+            });
+        }
     </script>
 </body>
 </html>

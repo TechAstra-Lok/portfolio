@@ -96,25 +96,70 @@ const SITE_DATA = {
 
     blogs: [
         {
+            id: "owasp-top-10",
             title: "Understanding OWASP Top 10 for Web Application Developers",
             category: "Cybersecurity",
             readTime: "5 min read",
+            date: "May 2026",
             excerpt: "A practical breakdown of common web vulnerabilities—including Injection flaws, Broken Auth, and XSS—with mitigation guidelines.",
-            link: "https://github.com/TechAstra-Lok/"
+            link: "blog.html?id=owasp-top-10",
+            content: `
+                <p>Web application security is an essential discipline for modern software engineers. The Open Web Application Security Project (OWASP) Top 10 serves as a foundational awareness document representing the most critical security risks to web applications.</p>
+                
+                <h2>1. Injection Flaws (SQLi, Command Injection)</h2>
+                <p>Injection flaws occur when untrusted user data is sent to an interpreter as part of a command or query. Attackers craft malicious data to trick the interpreter into executing unintended commands or accessing data without proper authorization.</p>
+                
+                <h2>2. Broken Authentication</h2>
+                <p>Application functions related to authentication and session management are frequently implemented incorrectly. This permits attackers to compromise passwords, keys, or session tokens to assume other users' identities.</p>
+                
+                <h2>3. Cross-Site Scripting (XSS)</h2>
+                <p>XSS flaws occur whenever an application includes untrusted data in a web page without proper validation or escaping. XSS allows attackers to execute scripts in the victim's browser to hijack user sessions or deface web sites.</p>
+
+                <h2>Mitigation Strategies</h2>
+                <p>To defend applications effectively: enforce parameterized queries, sanitize dynamic outputs, apply Content Security Policies (CSP), and maintain strict session handling practices.</p>
+            `
         },
         {
+            id: "nlp-edge-infrastructure",
             title: "Deploying Lightweight NLP Models on Edge Infrastructure",
             category: "Artificial Intelligence",
             readTime: "7 min read",
+            date: "April 2026",
             excerpt: "Techniques for model quantization, pruning, and optimization to execute machine learning inference efficiently on resource-constrained hardware.",
-            link: "https://github.com/TechAstra-Lok/"
+            link: "blog.html?id=nlp-edge-infrastructure",
+            content: `
+                <p>Running Natural Language Processing (NLP) models directly on edge devices reduces latency, minimizes bandwidth usage, and ensures data privacy by keeping compute localized.</p>
+
+                <h2>1. Model Quantization</h2>
+                <p>Quantization converts 32-bit floating-point parameters to lower-bit representations (such as 8-bit integers). This significantly reduces memory usage and speeds up execution without drastically lowering accuracy.</p>
+
+                <h2>2. Structural Pruning</h2>
+                <p>Pruning eliminates non-essential weights and attention heads from transformer architectures. By removing redundant paths, execution graphs become lighter and run substantially faster on mobile and edge platforms.</p>
+
+                <h2>3. ONNX & TensorRT Runtime Optimization</h2>
+                <p>Converting PyTorch models into unified representations like ONNX enables specialized runtime engines to execute low-level hardware optimizations targeted specifically at edge GPUs or NPUs.</p>
+            `
         },
         {
+            id: "frontend-xss-hardening",
             title: "Hardening Frontend Client Interfaces Against Modern XSS Vectors",
             category: "Web Security",
             readTime: "4 min read",
+            date: "March 2026",
             excerpt: "Implementing strict Content Security Policies (CSP), DOM sanitization, and secure token storage mechanisms.",
-            link: "https://github.com/TechAstra-Lok/"
+            link: "blog.html?id=frontend-xss-hardening",
+            content: `
+                <p>Modern frontend frameworks reduce common DOM-based vulnerabilities, but sophisticated client-side injection vectors still pose serious risks to applications.</p>
+
+                <h2>1. Content Security Policy (CSP) Headers</h2>
+                <p>A well-configured CSP acts as a defense-in-depth layer. By restricting where scripts can load from and disabling inline script execution (<code>'unsafe-inline'</code>), malicious payloads are blocked at the browser engine level.</p>
+
+                <h2>2. Secure Session Storage Practices</h2>
+                <p>Never store authentication tokens (JWTs) in <code>localStorage</code> or <code>sessionStorage</code> where any executed XSS payload can read them. Prefer <code>HttpOnly</code>, <code>SameSite</code>, and <code>Secure</code> cookies for token persistence.</p>
+
+                <h2>3. DOM Sanitization Pipelines</h2>
+                <p>When rendering raw HTML content dynamically, pass all strings through trusted sanitization tools (such as DOMPurify) before injecting them into the DOM tree.</p>
+            `
         }
     ]
 };

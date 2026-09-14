@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Blog Article | TechAstra Solutions</title>
+    <meta id="page-desc" name="description" content="Read full technical articles on Cybersecurity, AI/ML Development, and Web Architecture.">
+    <link rel="canonical" id="page-canonical" href="https://lokeshprasai.com.np/blog.html" />
+
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-dark: #0a0b10;
+            --card-bg: rgba(255, 255, 255, 0.04);
+            --accent-purple: #8b5cf6;
+            --accent-blue: #3b82f6;
+            --text-main: #ffffff;
+            --text-dim: #a1a1aa;
+            --glass-border: rgba(255, 255, 255, 0.08);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        html { scroll-behavior: smooth; }
+        body { background-color: var(--bg-dark); color: var(--text-main); line-height: 1.7; overflow-x: hidden; }
+
+        /* Background Blobs */
+        .blob { position: fixed; width: 500px; height: 500px; background: radial-gradient(circle, rgba(139, 92, 246, 0.12) 0%, rgba(0,0,0,0) 70%); z-index: -1; filter: blur(90px); pointer-events: none; }
+        .blob-1 { top: -100px; right: -100px; }
+        .blob-2 { bottom: -100px; left: -100px; }
+
+        /* Navigation */
+        nav {
+            position: fixed; top: 0; width: 100%; padding: 1rem 8%; display: flex; justify-content: space-between; align-items: center;
+            background: rgba(10, 11, 16, 0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); z-index: 1000; border-bottom: 1px solid var(--glass-border);
+        }
+        .logo-container { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-img { width: 40px; height: 40px; border-radius: 8px; object-fit: cover; }
+        .logo-text { font-weight: 800; font-size: 1.2rem; color: var(--text-main); }
+
+        .btn-back { display: inline-flex; align-items: center; gap: 8px; color: var(--text-dim); text-decoration: none; font-weight: 500; font-size: 0.9rem; transition: 0.3s; }
+        .btn-back:hover { color: var(--accent-blue); transform: translateX(-4px); }
+
+        /* Main Container */
+        main { max-width: 850px; margin: 0 auto; padding: 140px 1.5rem 80px 1.5rem; }
+        .article-card { background: var(--card-bg); border: 1px solid var(--glass-border); border-radius: 20px; padding: 3rem; box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+        .blog-meta { display: flex; gap: 1rem; font-size: 0.85rem; color: var(--accent-blue); margin-bottom: 1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+        h1 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.2; margin-bottom: 1.5rem; }
+        .article-excerpt { font-size: 1.1rem; color: var(--text-dim); border-left: 3px solid var(--accent-blue); padding-left: 1rem; margin-bottom: 2.5rem; }
+        
+        /* Content Styling */
+        .article-content h2 { font-size: 1.5rem; margin: 2rem 0 1rem 0; color: var(--text-main); }
+        .article-content p { color: var(--text-dim); margin-bottom: 1.2rem; font-size: 1.05rem; }
+        .article-content code { background: rgba(255, 255, 255, 0.1); padding: 2px 6px; border-radius: 4px; font-family: 'Fira Code', monospace; font-size: 0.9em; color: var(--accent-purple); }
+
+        footer { text-align: center; padding: 4rem 1rem; border-top: 1px solid var(--glass-border); color: var(--text-dim); font-size: 0.9rem; margin-top: 4rem; }
+
+        @media (max-width: 768px) {
+            main { padding-top: 110px; }
+            .article-card { padding: 1.8rem; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <nav>
+        <a href="index.html#home" class="logo-container">
+            <img src="./Tech_Astra.png" alt="TechAstra Logo" class="logo-img">
+            <span class="logo-text">TechAstra Solutions</span>
+        </a>
+        <a href="index.html#blog" class="btn-back"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+    </nav>
+
+    <main>
+        <article class="article-card" id="article-wrapper">
+            <div class="blog-meta">
+                <span id="blog-category">Category</span> • 
+                <span id="blog-readtime">Read Time</span> • 
+                <span id="blog-date">Date</span>
+            </div>
+            <h1 id="blog-title">Article Title</h1>
+            <p class="article-excerpt" id="blog-excerpt">Article summary snippet...</p>
+            <div class="article-content" id="blog-content">
+                <!-- Article Content Loaded Dynamically -->
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TechAstra Solutions | Lokesh Prasai. All rights reserved.</p>
+    </footer>
+
+    <!-- Include SITE_DATA Configuration -->
+    <script src="./config.js"></script>
+    <script>
+        // Parse Query Parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const blogId = urlParams.get('id');
+
+        if (typeof SITE_DATA !== 'undefined' && SITE_DATA.blogs) {
+            // Find post by ID or fallback to first post
+            const post = SITE_DATA.blogs.find(b => b.id === blogId) || SITE_DATA.blogs[0];
+
+            if (post) {
+                // Update Metadata & Head
+                document.getElementById('page-title').innerText = `${post.title} | Lokesh Prasai`;
+                document.getElementById('page-desc').setAttribute('content', post.excerpt);
+                document.getElementById('page-canonical').setAttribute('href', `https://lokeshprasai.com.np/blog.html?id=${post.id}`);
+
+                // Render Page Content
+                document.getElementById('blog-category').innerText = post.category;
+                document.getElementById('blog-readtime').innerText = post.readTime;
+                document.getElementById('blog-date').innerText = post.date || '2026';
+                document.getElementById('blog-title').innerText = post.title;
+                document.getElementById('blog-excerpt').innerText = post.excerpt;
+                document.getElementById('blog-content').innerHTML = post.content || `<p>${post.excerpt}</p>`;
+            }
+        }
+    </script>
+</body>
+</html>
